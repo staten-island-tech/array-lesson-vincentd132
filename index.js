@@ -7,3 +7,8 @@ const products = [
   { name: "Chair", price: 250, category: "Furniture", rating: 4.0 },
   { name: "Desk", price: 450, category: "Furniture", rating: 4.8 },
 ];
+
+const cheapProducts = products.filter((product) => product.price <= 300);
+cheapProducts.forEach((product) => {
+  console.log(product);
+});

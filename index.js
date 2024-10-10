@@ -9,6 +9,6 @@ const products = [
 ];
 
 const cheapProducts = products.filter((product) => product.price <= 300);
-cheapProducts.forEach((product) => {
+for (let product of cheapProducts) {
   console.log(product);
-});
+}
